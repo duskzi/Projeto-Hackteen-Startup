@@ -1,2 +1,2 @@
 # Projeto-Hackteen-Startup
-Projeto feito para a startup Movzi, feito para o desafio da Hackteen.
+Projeto feito para a startup Movzi, feita para o desafio da Hackteen.
