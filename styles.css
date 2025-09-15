@@ -1,6 +1,179 @@
 
+/* ---------------------------------------------------------------- */
+/* Folha de estilos, está incompleta, mas funcional.                */
+/* ---------------------------------------------------------------- */
+
+/* Paleta como variáveis */
+:root {
+  --green-dark: #005f73;
+  --green-light: #00A896;
+  --yellow: #FFD166;
+  --text-dark: #111827;
+  --bg-light: #ffffff;
+}
+
+/* Reset básico */
 * {
-   margin: 0; 
-   padding: 0; 
-   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+background: #005F73;
+background: linear-gradient(200deg,rgba(0, 95, 115, 1) 0%, rgba(0, 168, 150, 1) 50%, rgba(255, 209, 102, 1) 100%);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+header .logo h1 {
+  font-size: 1.8rem;
+  color: white;
+  text-align: center;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header a:hover {
+  color: var(--yellow);
+}
+
+/* Main */
+main {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+main h1 {
+  font-size: 3rem;
+  color: var(--green-dark);
+}
+
+main h2 {
+  font-size: 1.5rem;
+  color: var(--green-light);
+  margin-top: 0.5rem;
+}
+
+p {
+   font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+  background-color: var(--yellow);
+  color: var(--green-dark);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Reutilizáveis */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn-primary {
+  background: var(--green-light);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: var(--green-dark);
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  background: var(--yellow);
+  color: var(--green-dark);
+}
+
+.btn-secondary:hover {
+  background: var(--green-light);
+  color: white;
+  transform: scale(1.05);
+}
+
+.features {
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	gap: 2rem;
+	margin: 4rem auto;
+	padding: 2rem;
+	max-width: 1000px;
+	flex-wrap: wrap; /* já ajuda quando a tela vai diminuindo */
+}
+
+.feature-card {
+	background: #ffffff;
+	border-radius: 12px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	padding: 2rem;
+	text-align: center;
+   /* largura fixa, assim corrigindo o bug do card ficar pulando */
+	flex: 1 1 280px;
+	min-width: 250px;
+   /* Animação suave */
+	transition: transform 0.4s ease, rotate 0.4s ease;
+}
+
+.feature-card:hover {
+	transform: translateY(-6px) scale(1.1) rotate(5deg);
+}
+
+.feature-card img {
+	margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+	color: #005b66;
+	margin-bottom: 0.5rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+	.features {
+		flex-direction: column;
+		align-items: center;
+		padding: 1rem;
+	}
+
+	.feature-card {
+		width: 100%;
+		max-width: 400px;
+	}
 }

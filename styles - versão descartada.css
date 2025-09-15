@@ -1,0 +1,105 @@
+
+* {
+   margin: 0; 
+   padding: 0; 
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   border-color: black;
+   border-width: 6px;
+}
+
+body {
+	background-color: #0056b3;
+}
+
+/* Container principal com duas colunas */
+.main-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 40px;
+	gap: 40px;
+	box-sizing: border-box;
+}
+
+/* Imagem do lado esquerdo */
+.image-container img {
+	width: 100%;
+	max-width: 500px;
+	height: auto;
+	border-radius: 10px;
+	object-fit: cover;
+}
+
+/* Container da direita */
+.content-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex: 1;
+}
+
+/* Formulário */
+.form-container {
+	margin-bottom: 30px;
+}
+
+.form-container h2 {
+	margin-bottom: 20px;
+	font-size: 24px;
+}
+
+.form-container form {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.form-container input,
+.form-container textarea {
+	padding: 10px;
+	margin: 12px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.form-container textarea {
+	resize: vertical;
+	min-height: 100px;
+}
+
+.form-container button {
+	padding: 12px;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+}
+
+.form-container button:hover {
+	background-color: #0056b3;
+}
+
+.social-container {
+	display: flex;
+	justify-content: space-around;
+	gap: 24px;
+}
+
+.social-container img {
+	width: 40px;
+	height: 40px;
+	transition: transform 0.2s ease;
+	cursor: pointer;
+}
+
+.social-container img:hover {
+	transform: scale(1.1);
+}
+
