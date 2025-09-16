@@ -1,141 +1,172 @@
 
 /* ---------------------------------------------------------------- */
-/* Folha de estilos, está incompleta, mas funcional.                */
+/* Esta folha CSS está incompleta, porém funcional.                	*/
+/* ---------------------------------------------------------------- */
+/*  ____            _         _ 
+/* |  _ \ _   _ ___| | __ ___(_)
+/* | | | | | | / __| |/ /|_  / |
+/* | |_| | |_| \__ \   <  / /| |
+/* |____/ \__,_|___/_|\_\/___|_|
+/*
 /* ---------------------------------------------------------------- */
 
-/* Paleta como variáveis */
+
+/* Paleta de cores */
 :root {
-  --green-dark: #005f73;
-  --green-light: #00A896;
-  --yellow: #FFD166;
-  --text-dark: #111827;
-  --bg-light: #ffffff;
+	--green-dark: #005f73;
+	--green-light: #00A896;
+	--yellow: #FFD166;
+	--text-dark: #111827;
+	--bg-light: #ffffff;
 }
 
 /* Reset básico */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: var(--bg-light);
-  color: var(--text-dark);
-  line-height: 1.6;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	background-color: var(--bg-light);
+	color: var(--text-dark);
+	line-height: 1.6;
 }
 
 /* Header */
 header {
-background: #005F73;
-background: linear-gradient(200deg,rgba(0, 95, 115, 1) 0%, rgba(0, 168, 150, 1) 50%, rgba(255, 209, 102, 1) 100%);
-  color: white;
-  padding: 1rem 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+	background: linear-gradient(
+	200deg,
+	rgba(0, 95, 115, 1) 0%,
+	rgba(0, 168, 150, 1) 50%,
+	rgba(255, 209, 102, 1) 100%
+	);
+	color: white;
+	padding: 1rem 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	flex-wrap: nowrap;
 }
 
+/* Logo */
 header .logo {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
 }
 
 header .logo h1 {
-  font-size: 1.8rem;
-  color: white;
-  text-align: center;
+	font-size: 1.8rem;
+	color: white;
+	text-align: center;
 }
 
-header ul {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
+/* Menu */
+nav {
+	/* para o mobile */
+	width: auto;
 }
 
-header a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  transition: color 0.3s;
+.nav-links {
+	list-style: none;
+	display: flex;
+	gap: 1.1rem;
 }
 
-header a:hover {
-  color: var(--yellow);
+.nav-links li a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	font-size: 1.2rem;
+	transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+	color: var(--yellow);
+}
+
+/* Botão hamburger - escondido desktop */
+.menu-toggle {
+	display: none;
+	font-size: 2rem;
+	background: none;
+	border: none;
+	color: white;
+	cursor: pointer;
 }
 
 /* Main */
-main {
-  text-align: center;
-  padding: 3rem 1rem;
+main.hero {
+	text-align: center;
+	padding: 3rem 1rem;
 }
 
 main h1 {
-  font-size: 3rem;
-  color: var(--green-dark);
+	font-size: 3rem;
+	color: var(--green-dark);
 }
 
 main h2 {
-  font-size: 1.5rem;
-  color: var(--green-light);
-  margin-top: 0.5rem;
-}
-
-p {
-   font-size: 1.2rem;
+	font-size: 1.5rem;
+	color: var(--green-light);
 }
 
 /* Footer */
 footer {
-  background-color: var(--yellow);
-  color: var(--green-dark);
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
+	background-color: var(--yellow);
+	color: var(--green-dark);
+	text-align: center;
+	padding: 1rem;
+	font-size: 0.9rem;
 }
 
-/* Reutilizáveis */
+#bus {
+  transform-origin: center bottom;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#earth {
+  animation: spin 12s linear infinite;
+}
+
+/* Botões */
 .btn {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background 0.3s, transform 0.2s;
+	display: inline-block;
+	padding: 0.75rem 1.5rem;
+	border-radius: 8px;
+	font-weight: bold;
+	text-decoration: none;
+	transition: background 0.3s, transform 0.2s;
 }
 
 .btn-primary {
-  background: var(--green-light);
-  color: white;
+	background: var(--green-light);
+	color: white;
 }
 
 .btn-primary:hover {
-  background: var(--green-dark);
-  transform: scale(1.05);
+	background: var(--green-dark);
+	transform: scale(1.05);
 }
 
-.btn-secondary {
-  background: var(--yellow);
-  color: var(--green-dark);
-}
-
-.btn-secondary:hover {
-  background: var(--green-light);
-  color: white;
-  transform: scale(1.05);
-}
-
+/* Features */
 .features {
 	display: flex;
 	justify-content: center;
 	align-items: stretch;
 	gap: 2rem;
-	margin: 4rem auto;
+	margin: 2rem auto;
 	padding: 2rem;
 	max-width: 1000px;
-	flex-wrap: wrap; /* já ajuda quando a tela vai diminuindo */
+	flex-wrap: wrap;
 }
 
 .feature-card {
@@ -144,10 +175,8 @@ footer {
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 	padding: 2rem;
 	text-align: center;
-   /* largura fixa, assim corrigindo o bug do card ficar pulando */
 	flex: 1 1 280px;
 	min-width: 250px;
-   /* Animação suave */
 	transition: transform 0.4s ease, rotate 0.4s ease;
 }
 
@@ -166,14 +195,50 @@ footer {
 
 /* Responsividade */
 @media (max-width: 768px) {
+	/* Mostra botão hamburguer */
+	.menu-toggle {
+	display: block;
+	}
+
+	header {
+	flex-wrap: wrap;
+	}
+
+	nav {
+	width: 100%;
+	}
+
+	/* Esconde o menu até ativar */
+	.nav-links {
+	flex-direction: column;
+	background-color: var(--green-dark);
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	display: none;
+	padding: 1rem 2rem;
+	z-index: 999;
+	}
+
+	.nav-links.active {
+	display: flex;
+	}
+
+	.nav-links li a {
+	font-size: 1.2rem;
+	padding: 0.5rem 0;
+	}
+
+	/* Features ficam em coluna */
 	.features {
-		flex-direction: column;
-		align-items: center;
-		padding: 1rem;
+	flex-direction: column;
+	align-items: center;
+	padding: 1rem;
 	}
 
 	.feature-card {
-		width: 100%;
-		max-width: 400px;
+	width: 100%;
+	max-width: 400px;
 	}
 }

@@ -8,21 +8,52 @@
 </head>
 <body>
 	<header>
-		<!--Movzi por enquanto, já que RotaFácil já é utilizado-->
+		<div class="logo">
+		<img src="images/new-logo.svg" alt="Logo da Movzi" height="50" width="50" />
 		<h1>Movzi</h1>
-		<ul>
+		</div>
+
+		<button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">&#9776;</button>
+
+		<nav>
+		<ul class="nav-links">
 			<li><a href="index.html">Início</a></li>
 			<li><a href="sobre.html">Sobre Nós</a></li>
 			<li><a href="produtos.html">Rotzi</a></li>
 			<li><a href="contato.html">Contato</a></li>
 		</ul>
+		</nav>
 	</header>
 	<main>
 		<h1>Sobre Nós:</h1>
 			<p>Movzi é uma startup criada para facilitar a locomoção em transportes públicos pela cidade utilizando nosso aplicativo: o <strong>Rotzi</strong>.
 			<br>
 			<h2>Quem somos?</h2>
-		<h3>Felipe Kühl Pereira, programador, designer e idealizador da startup.</h3>
+	<section class="features">
+	<div class="feature-card">
+		<img src="images/like.png" alt="Ícone de simplicidade" width="60" height="60">
+		<h3>Simples de Usar</h3>
+		<p>Interface intuitiva para que qualquer pessoa consiga planejar suas rotas sem complicação.</p>
+	</div>
+	
+	<div class="feature-card">
+		<img src="images/check.png" alt="Ícone de gratuito" width="60" height="60">
+		<h3>Ônibus Gratuitos</h3>
+		<p>Todos os trajetos estão disponíveis sem custo, garantindo mais acessibilidade à mobilidade urbana.</p>
+	</div>
+
+	<div class="feature-card">
+		<img src="images/clicker.png" alt="Ícone de acessibilidade" width="60" height="60">
+		<h3>Sempre Acessível</h3>
+		<p>Compatível com diferentes dispositivos e pensado para atender a todos os usuários.</p>
+	</div>
+</section>
 	</main>
+	<footer>
+		<p>&copy; 2025 Movzi. Todos os direitos reservados.</p>
+	</footer>
+
+	<!--Toggle pra mobile-->
+	<script src="scripts/toggle.js"></script>
 </body>
 </html>
