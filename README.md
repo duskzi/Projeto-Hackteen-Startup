@@ -2,8 +2,10 @@
 
 Nome do Projeto: 
 Movzi.
+
 ETEC: 
 Prof. Edson Galvão.
+
 Integrantes da equipe:
   - Felipe Kühl Pereira
   - Pedro Henrique Morais Dias
