@@ -20,8 +20,8 @@ Instruções: Baixe o código via .ZIP na branch main, descompacte e abra o arqu
 
 Extras:
   Sites utilizados durante o desenvolvimento:
-    - SVGs, icone da startup desenhados com: https://www.svgator.com/
-    - Gradiente de cores criado com: https://cssgradient.io/
-    - Ícones das redes sociais pegas no: https://www.flaticon.com/
+  - SVGs, icone da startup desenhados com: https://www.svgator.com/
+  - Gradiente de cores criado com: https://cssgradient.io/
+  - Ícones das redes sociais pegas no: https://www.flaticon.com/
     
 
