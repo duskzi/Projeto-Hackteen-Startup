@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+	<!--Metadados Gerais-->
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Movzi: Página Inicial</title>
@@ -13,8 +14,10 @@
 		<h1>Movzi</h1>
 		</div>
 
+		<!--Toggle hambuerguerzinho-->
 		<button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">&#9776;</button>
 
+		<!--Navegação-->
 		<nav>
 		<ul class="nav-links">
 			<li><a href="index.html">Início</a></li>
@@ -25,7 +28,8 @@
 		</nav>
 	</header>
 
-	<main class="hero">
+	<!--Removi a classe Hero pra reutilizar o CSS-->
+	<main>
 		<h1>Movzi</h1>
 		<h2><i>Movendo o mundo</i></h2>
 		<p>
@@ -33,37 +37,48 @@
 		Com nossa proposta, buscamos transformar a forma como as pessoas se deslocam, oferecendo soluções <br />
 		acessíveis para todos através de nosso app: <strong>O Rotzi</strong>.
 		</p>
-		<br />
-		<img src="images/new-logo-outline2.svg" alt="Imagem da Movzi" id="bus" width="100" height="100" />
-		<br />
-		<img src="images/earth.png" alt="Imagem da Terra" id="earth" width="100" height="100" />
-		<br /><br />
 
+		<!--Classe do botão para espaçamento-->
 		<div class="hero-buttons">
 		<a href="produtos.html" class="btn btn-primary">Conheça o Rotzi</a>
 		</div>
-		<br /><br />
+
+		<!--Imagens para a animação do site-->
+		<img src="images/new-logo-outline2.svg" alt="Imagem da Movzi" id="bus" width="100" height="100" />
+		<br>
+		<img src="images/earth.png" alt="Imagem da Terra" id="earth" width="100" height="100" />
+
+		<!--Espaçamento entre as seções (por enquanto sem CSS mesmo)-->
+		<br><br>
 
 		<h2>Vantagens do Rotzi</h2>
-		<section class="features">
+
+		<!--Cards e Benefícios-->
+		<div class="features">
 		<div class="feature-card">
 			<img src="images/like.png" alt="Ícone de simplicidade" width="60" height="60" />
 			<h3>Simples de Usar</h3>
 			<p>Interface intuitiva para que qualquer pessoa consiga planejar suas rotas sem complicação.</p>
 		</div>
-
 		<div class="feature-card">
 			<img src="images/check.png" alt="Ícone de gratuito" width="60" height="60" />
 			<h3>Ônibus Gratuitos</h3>
 			<p>Todos os trajetos estão disponíveis sem custo, garantindo mais acessibilidade à mobilidade urbana.</p>
 		</div>
-
 		<div class="feature-card">
 			<img src="images/clicker.png" alt="Ícone de acessibilidade" width="60" height="60" />
 			<h3>Sempre Acessível</h3>
 			<p>Compatível com diferentes dispositivos e pensado para atender a todos os usuários.</p>
 		</div>
-		</section>
+		</div>
+		
+		<h2>Tem alguma dúvida?</h2>
+		<p>Entre em contato conosco utilizando seu email.</p>
+
+		<!--Classe do botão para espaçamento-->
+		<div class="hero-buttons">
+		<a href="contato.html" class="btn btn-primary">Entre em Contato</a>
+		</div>
 	</main>
 
 	<footer>

@@ -99,7 +99,7 @@ nav {
 }
 
 /* Main */
-main.hero {
+main {
 	text-align: center;
 	padding: 3rem 1rem;
 }
@@ -155,6 +155,12 @@ footer {
 .btn-primary:hover {
 	background: var(--green-dark);
 	transform: scale(1.05);
+}
+
+.hero-buttons {
+	margin: 1.5rem;
+background: #ffffff;
+background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(0, 95, 115, 0.10) 50%, rgba(255, 255, 255, 1) 100%);
 }
 
 /* Features */
