@@ -8,37 +8,46 @@
 </head>
 <body>
 	<header>
-		<ul>
+		<div class="logo">
+		<img src="images/new-logo.svg" alt="Logo da Movzi" height="50" width="50" />
+		<h1>Movzi</h1>
+		</div>
+
+		<!--Toggle hambuerguerzinho-->
+		<button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">&#9776;</button>
+
+		<!--Navegação-->
+		<nav>
+		<ul class="nav-links">
 			<li><a href="index.html">Início</a></li>
 			<li><a href="sobre.html">Sobre Nós</a></li>
 			<li><a href="produtos.html">Rotzi</a></li>
 			<li><a href="contato.html">Contato</a></li>
 		</ul>
+		</nav>
 	</header>
 	<!--Container principal-->
 	<main class="main-container">
-		<!--Container da imagem, irei criá-la depois-->
-		<div class="image-container">
-			<img src="images/contato.jpg" alt="Imagem do contato">
-		</div>
-
 		<!--Container do conteúdo-->
 		<div class="content-container">
 
 			<!--Conainer do formulário-->
 			<div class="form-container">
 				<h2>Entre em contato</h2>
+				<p>Tem alguma dúvida/sugestão? Entre em contato com o formulário abaixo ou pelas redes sociais:</p>
+				<br>
 
+				<!--Formulário-->
 				<form action="" method="get">
 					<input type="text" name="name" id="name" placeholder="Nome completo">
 					<input type="email" name="email" id="email" placeholder="Email">
 					<textarea name="message" id="message" placeholder="Digite sua mensagem"></textarea>
 
-					<button type="submit" class="bnt">Enviar seu email</button>
+					<button type="submit" class="btn-primary">Enviar seu email</button>
 				</form>
 			</div>
 			
-			<!--Não coloquei os links adequados ainda-->
+			<!--Não coloquei os links reais-->
 			<div class="social-container">
 			<a href="https://www.linkedin.com/" target="_blank">
 				<img src="icons/linkedin-square-icon.webp" alt="Ícone do LinkedIn">
@@ -58,5 +67,14 @@
 			</div>
 		</div>
 	</main>
+
+	<!--Rodapé-->
+	<footer>
+		<p>&copy; 2025 Movzi. Todos os direitos reservados.</p>
+	</footer>
+
+	<!--Toggle pra mobile-->
+	<script src="scripts/toggle.js"></script>
+
 </body>
 </html>

@@ -9,49 +9,97 @@
 <body>
 	<header>
 		<div class="logo">
-		<img src="images/new-logo.svg" alt="Logo da Movzi" height="50" width="50" />
-		<h1>Movzi</h1>
+			<img src="images/new-logo.svg" alt="Logo da Movzi" height="50" width="50" />
+			<h1>Movzi</h1>
 		</div>
 
+		<!--Toggle hambuerguerzinho-->
 		<button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">&#9776;</button>
 
+		<!--Navegação-->
 		<nav>
-		<ul class="nav-links">
-			<li><a href="index.html">Início</a></li>
-			<li><a href="sobre.html">Sobre Nós</a></li>
-			<li><a href="produtos.html">Rotzi</a></li>
-			<li><a href="contato.html">Contato</a></li>
-		</ul>
+			<ul class="nav-links">
+				<li><a href="index.html">Início</a></li>
+				<li><a href="sobre.html" class="active">Sobre Nós</a></li>
+				<li><a href="produtos.html">Rotzi</a></li>
+				<li><a href="contato.html">Contato</a></li>
+			</ul>
 		</nav>
 	</header>
-	<main>
-		<h1>Sobre Nós:</h1>
-			<p>Movzi é uma startup criada para facilitar a locomoção em transportes <br> públicos pela cidade utilizando nosso aplicativo: o <strong>Rotzi</strong>.
-			<br>
-			<br>
-			<h2>Quem nós somos?</h2>
-	<section class="features">
-	<div class="feature-card">
-		<img src="images/Untitled.svg" alt="Imagem Vetorial do Felipe" width="240" height="240">
-		<h3>Felipe Kühl</h3>
-		<p>Programador, Designer e Idealizador da Startup.</p>
-	</div>
-	
-	<div class="feature-card">
-		<img src="images/pedro.svg" alt="Imagem Vetorial do Pedro Morais" width="240" height="240">
-		<h3>Pedro Morais</h3>
-		<p>Redes Sociais, Contato e Ideias.</p>
-	</div>
 
-	<div class="feature-card">
-		<img src="images/felipe-gabriel.svg" alt="Imagem Vetorial do Felipe Gabriel" width="240" height="240">
-		<h3>Felipe Gabriel Pires</h3>
-		<p>Só surgiu aqui mesmo.</p>
-	</div>
-</section>
+	<main>
+		<h1>Sobre Nós</h1>
+		<p>Movzi é uma startup criada para facilitar a locomoção em transportes públicos pela cidade utilizando nosso aplicativo: o <strong>Rotzi</strong>. 
+		Nosso objetivo é transformar a mobilidade urbana em algo mais simples, acessível e confiável.</p>
+
+		<!--Quem somos-->
+		<h2>Quem nós somos?</h2>
+		<section class="features">
+			<div class="feature-card">
+				<img src="images/Untitled.svg" alt="Imagem Vetorial do Felipe Kühl" width="240" height="240">
+				<h3>Felipe Kühl</h3>
+				<p>Programador, Designer e Idealizador da Startup.</p>
+			</div>
+			
+			<div class="feature-card">
+				<img src="images/pedro.svg" alt="Imagem Vetorial do Pedro Morais" width="240" height="240">
+				<h3>Pedro Morais</h3>
+				<p>Responsável pelas Redes Sociais, Contato e Comunicação.</p>
+			</div>
+
+			<div class="feature-card">
+				<img src="images/felipe-gabriel.svg" alt="Imagem Vetorial do Felipe Gabriel" width="240" height="240">
+				<h3>Felipe Gabriel Pires</h3>
+				<p>Gestão de Ideias e Auxílio no Desenvolvimento do Projeto.</p>
+			</div>
+		</section>
+
+		<!--Sobre a Movzi-->
+		<div class="about-us">
+			<h2>Nossa Missão & Problema</h2>
+			<p>
+				Na <strong>Movzi</strong>, acreditamos que a mobilidade urbana deve ser simples e acessível. 
+				Hoje, muitas pessoas enfrentam atrasos, falta de informações e dificuldade de acesso ao transporte público. 
+				O <strong>Rotzi</strong> veio para centralizar rotas, pontos e horários em um só lugar, simplificando o deslocamento diário.
+			</p>
+		</div>
+
+		<!--Público e Benefícios-->
+		<div class="about-us">
+			<h2>Público-Alvo & Benefícios</h2>
+			<ul>
+				<li>Estudantes e trabalhadores que precisam otimizar o tempo.</li>
+				<li>Idosos e pessoas com mobilidade reduzida que buscam acessibilidade.</li>
+				<li>Informações em tempo real e rotas práticas para todos os usuários.</li>
+			</ul>
+		</div>
+
+		<!--Diferenciais e Tecnologias-->
+		<div class="about-us">
+			<h2>Diferenciais & Tecnologias</h2>
+			<p>
+				Diferente de outras plataformas, o <strong>Rotzi</strong> é leve, intuitivo e acessível. 
+				Unimos mapas digitais, geolocalização e site responsivo para entregar uma experiência simples e eficiente para todos.
+			</p>
+		</div>
+
+		<h2 class="title">Conheça nosso App</h2>
+		<!--Imagem do App num Iphone-->
+		<img src="images/Rotzi-left.png" class="phone" alt="Mockup do aplicativo Rotzi" width="300" height="500">
+
+		<!--Script para a opacidade do título-->
+		<script src="scripts/phone.js"></script>
+		<br>
+	
+		<!--Classe do botão para espaçamento-->
+		<div class="hero-buttons">
+		<a href="produtos.html" class="btn btn-primary">Conheça o Rotzi</a>
+		</div>
 	</main>
+	
+	<!--Rodapé-->
 	<footer>
-		<p>&copy; 2025 Movzi. Todos os direitos reservados.</p>
+		<p>&copy; 2025 Movzi. Todos os direitos reservados. | <a href="contato.html">Entre em contato</a></p>
 	</footer>
 
 	<!--Toggle pra mobile-->
