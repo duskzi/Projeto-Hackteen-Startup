@@ -1,28 +1,28 @@
 # Projeto-Hackteen-Startup
 
-Nome do Projeto: 
+<strong>Nome do Projeto</strong>: 
 Movzi.
 
-ETEC: 
+<strong>Etec</strong>: 
 Prof. Edson Galvão.
 
-Integrantes da equipe:
+<strong>Integrantes da equipe</strong>
   - Felipe Kühl Pereira
   - Pedro Henrique Morais Dias
   - Felipe Gabriel Martins Pires
 
-Descrição do Projeto:
+<strong>Descrição do Projeto</strong>:
   A Movzi é uma startup criada para solucionar um dos grandes desafios do dia a dia: A mobilidade urbana.
-  Em muitas cidades utilizar o transporte público pode ser complicado devido a horários confusos e à falta de clareza sobre as rotas.
+  Em muitas cidades utilizar o transporte público pode ser desafiador devido a horários confusos e à falta de informações sobre as rotas.
 
   Para resolver esse problema, desenvolvemos o Rotzi, um aplicativo que facilita a locomoção por meio de transportes públicos.
-  Com ele, o usuário pode encontrar tudo em um só lugar: Rotas otimizadas, horários de ônibus atualizados, trajetos e pontos de interesse.
+  Com ele, o usuário pode encontrar tudo em um só lugar: Rotas, horários de ônibus, trajetos e pontos de interesse.
 
-  Nosso objetivo é tornar o mobilidade prática, acessível e confiável para todos.
+  Nosso objetivo é tornar o mobilidade prática, acessível e segura para todos.
 
-Instruções: Baixe o código via .ZIP na branch main, descompacte e abra o arquivo "index.html".
+Instruções: Baixe o código via .ZIP na <i>branch main</i>, descompacte e abra o arquivo <strong>index.html</strong>.
 
-Extras:
+<strong>Extras</strong>:
   Sites utilizados durante o desenvolvimento:
   - SVGs, icone da startup desenhados com: https://www.svgator.com/
   - Gradiente de cores criado com: https://cssgradient.io/
