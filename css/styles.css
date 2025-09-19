@@ -6,7 +6,6 @@
 /* Por isso, não estranhem os valores diferentes. (como .956rem) 				   */
 /* Nota: 1rem = 16px 															   */
 
-
 /* Paleta de cores */
 :root {
 	--green-dark: #005f73;
@@ -236,7 +235,6 @@ footer {
 	background: #ffffff;
 	border-radius: 1rem;
 	box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
-	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .about-us:hover {
@@ -258,12 +256,11 @@ footer {
 	padding: 0;
 }
 
-/* Utilizando o before para adicionar ícones */
 .about-us ul li::before {
-	content: "✔️ ";
-	color: var(--green-light);
+    /* Essas barras invertidas são códigos Unicode, peguei na web */
+  	content: "\2713\00a0";
+  	color: var(--green-light);
 }
-
 .phone {
 	transition: transform 0.3s ease;
 }
@@ -289,7 +286,7 @@ footer {
 	margin: 0 auto;
 	padding: 9.375rem; /* 150px */
 	box-sizing: border-box;
-	background: #ffffff;
+	background: var(--bg-light);
 }
 
 /* Formulário */
@@ -313,7 +310,7 @@ footer {
 	padding: 0.625rem; /* 10px */
 	margin: 0.75rem; /* 12px */
 	font-size: 1rem; /* 16px */
-	border: 0.09375rem dotted var(--green-dark); /* 1.5px */
+	border: 2px dotted var(--green-dark);
 	border-radius: 0.3125rem; /* 5px */
 	box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1); /* 0 4px 12px */
 }
@@ -337,6 +334,13 @@ footer {
 	background-color: var(--green-dark);
 }
 
+.form-container input:focus,
+.form-container textarea:focus {
+	outline: none;
+	border-color: var(--green-light);
+	border-style: solid;
+}
+
 .social-container {
 	display: flex;
 	justify-content: space-around;
@@ -358,6 +362,67 @@ footer {
 
 .social-container img:hover {
 	transform: scale(1.1);
+}
+
+body {
+	background-color: var(--bg-light);
+}
+
+/* Container principal app */
+.app-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center; 
+	max-width: 75rem; /* 1200px */
+	margin: auto; /* centraliza na tela */
+	flex-wrap: wrap; /* quebra em tela menor */
+	background-color: var(--bg-light);
+}
+
+/* Texto */
+.text-app {
+	flex: 1 1 30rem; /* ocupa espaço proporcional */
+}
+
+.text-app h1 {
+	font-size: 2.5rem;
+	color: var(--green-dark);
+	margin-bottom: 1rem;
+}
+
+.text-app p {
+	font-size: 1.2rem;
+	color: var(--text-dark);
+	line-height: 1.6;
+}
+
+/* Imagem */
+.app-image {
+	flex: 1 1 25rem;
+	text-align: center;
+	margin: 4rem;
+}
+
+.app-mockup {
+	max-width: 100%;
+	height: auto;
+}
+
+#app-phone {
+	animation: floatRotate 4s ease-in-out infinite;
+	transform-origin: center;
+}
+
+@keyframes floatRotate {
+	0% {
+		transform: translateY(0px) rotate(0deg);
+	}
+	50% {
+		transform: translateY(-10px) rotate(1deg);
+	}
+	100% {
+		transform: translateY(0px) rotate(0deg);
+	}
 }
 
 /* Responsividade */

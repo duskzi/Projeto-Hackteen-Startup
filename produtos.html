@@ -2,14 +2,82 @@
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
- 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Movzi: Rotzi</title>
-	<link rel="stylesheet" href="styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Movzi: Produtos</title>
+	<link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
+	<header>
+		<div class="logo">
+		<img src="images/new-logo.svg" alt="Logo da Movzi" height="50" width="50" />
+		<h1>Movzi</h1>
+		</div>
+
+		<!--Toggle hambuerguerzinho-->
+		<button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">&#9776;</button>
+
+		<!--Navegação-->
+		<nav>
+		<ul class="nav-links">
+			<li><a href="index.html">Início</a></li>
+			<li><a href="sobre.html">Sobre Nós</a></li>
+			<li><a href="produtos.html">Rotzi</a></li>
+			<li><a href="contato.html">Contato</a></li>
+		</ul>
+		</nav>
+	</header>
 	<main>
-		<h1>Apresentamos o Rotzi</h1>
-		<h2>A nova rota digital, sem perder tempo</h2>
+		
+		<!--Container principal-->
+		<div class="app-container">
+		<div class="text-app">
+			<h1>Conheça o Rotzi</h1>
+			<p>O Rotzi é o aplicativo que facilita sua mobilidade urbana, reunindo rotas, horários e pontos de ônibus em tempo real. Mais praticidade e menos espera — tudo na palma da sua mão.</p>
+		</div>
+		<div class="app-image">
+			<img src="images/Rotzi-left.png" alt="Mockup do App Rotzi" class="app-mockup" id="app-phone" width="300" />
+		</div>
+		</div>
+
+		<!--Container de funcionalidades-->
+		<div class="app-container">
+		<div class="text-app">
+			<h1>Rotas Inteligentes</h1>
+			<p>O Rotzi analisa o trânsito em tempo real e sugere as rotas mais rápidas para o seu destino, incluindo trajetos por linhas de ônibus gratuitas quando disponíveis. Economize tempo e dinheiro enquanto se locomove com eficiência, evitando esperas longas e escolhendo sempre o melhor caminho para você.</p>
+		</div>
+		<div class="app-image">
+			<img src="images/route.svg" alt="Rotas inteligentes no app Rotzi" class="app-mockup" width="300" />
+		</div>
+		</div>
+
+		<!--Container de acessibilidade-->
+		<div class="app-container">
+		<div class="text-app">
+			<h1>Acessível para todos</h1>
+			<p>Com uma interface clara, intuitiva e inclusiva, o Rotzi foi pensado para todos os usuários do transporte público. Recursos como contraste otimizado, fontes legíveis e suporte de voz facilitam a navegação, enquanto a indicação de linhas gratuitas garante que qualquer pessoa possa se deslocar com facilidade e economia.</p>
+		</div>
+		<div class="app-image">
+			<img src="images/Rotzi-portrait.png" alt="Acessibilidade no app Rotzi" class="app-mockup" width="230" />
+		</div>
+		</div>
+		
+		<br>
+		<h1>Baixe o Rotzi já</h1>
+		<h2>Disponível na Playstore</h2>
+
+		<!--Classe do botão para espaçamento-->
+		<div class="hero-buttons">
+			<a href="https://play.google.com/store/apps?hl=pt_BR" class="btn btn-primary" target="_blank">Baixar</a>
+		</div>
 	</main>
+
+	<!--Rodapé-->
+	<footer>
+		<p>&copy; 2025 Movzi. Todos os direitos reservados.</p>
+	</footer>
+
+	<!--Toggle pra mobile-->
+	<script src="scripts/toggle.js"></script>
+
 </body>
 </html>
