@@ -20,7 +20,7 @@ Prof. Edson Galvão.
 
   Nosso objetivo é tornar o mobilidade prática, acessível e segura para todos.
 
-<strong>INSTRUÇÕES</strong>: Baixe o código via .ZIP na <i>branch main</i>, descompacte e abra o arquivo <strong>index.html</strong>.
+<strong>INSTRUÇÕES</strong>: Baixe o código em .ZIP na <i>branch main</i>, descompacte e abra o arquivo <strong>index.html</strong>.
 
 <strong>Extras</strong>:
   Sites utilizados durante o desenvolvimento:
