@@ -6,7 +6,7 @@ Movzi.
 <strong>Etec</strong>: 
 Prof. Edson Galvão.
 
-<strong>Integrantes da equipe</strong>
+<strong>Integrantes da equipe</strong>:
   - Felipe Kühl Pereira
   - Pedro Henrique Morais Dias
   - Felipe Gabriel Martins Pires
@@ -27,5 +27,9 @@ Instruções: Baixe o código via .ZIP na <i>branch main</i>, descompacte e abra
   - SVGs, icone da startup desenhados com: https://www.svgator.com/
   - Gradiente de cores criado com: https://cssgradient.io/
   - Ícones das redes sociais pegas no: https://www.flaticon.com/
-    
+
+  Tutoriais de grande ajuda:
+  - Formulário: https://youtu.be/wwqOJ2o84S4?si=i28UYLw_wWjwai_f
+  - Tutorial de SVG: https://youtu.be/9EwIPb681ng?si=bhyWMS4QppKMU3al
+  - Tutorial de animações CSS: https://www.youtube.com/watch?v=z2LQYsZhsFw
 
