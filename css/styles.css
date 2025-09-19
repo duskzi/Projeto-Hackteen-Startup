@@ -37,7 +37,7 @@ header {
 	rgba(0, 168, 150, 1) 50%,
 	rgba(255, 209, 102, 1) 100%
 	);
-	color: white;
+	color: var(--bg-light);
 	padding: 1rem 2rem;
 	display: flex;
 	align-items: center;
@@ -55,7 +55,6 @@ header .logo {
 
 header .logo h1 {
 	font-size: 1.8rem;
-	color: white;
 	text-align: center;
 }
 
@@ -72,14 +71,27 @@ nav {
 
 .nav-links li a {
 	text-decoration: none;
-	color: white;
 	font-weight: bold;
 	font-size: 1.2rem;
 	transition: color 0.3s;
+	color: var(--bg-light);
 }
 
 .nav-links li a:hover {
 	color: var(--yellow);
+}
+
+/* Logo principal */
+.main-logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+}
+
+.main-logo h1 {
+	font-size: 5.8rem;
+	color: var(--green-dark);
 }
 
 /* Botão hamburgerzinho (fica escondido na tela grande) */
@@ -88,7 +100,7 @@ nav {
 	font-size: 2rem;
 	background: none;
 	border: none;
-	color: white;
+	color: var(--bg-light);
 	cursor: pointer;
 }
 
@@ -139,20 +151,21 @@ footer {
     transform: rotate(360deg);
   }
 }
+
 /* Botões */
-/* Note que nem todos são utilizados */
+/* Não usei botões, usei links estilizados como botão */
 .btn {
 	display: inline-block;
 	padding: 0.75rem 1.5rem;
 	border-radius: 0.5rem;
 	font-weight: bold;
 	text-decoration: none;
-	transition: background 0.3s, transform 0.2s;
+	transition: background-color 0.3s, transform 0.2s;
 }
 
 .btn-primary {
-	background: var(--green-light);
-	color: white;
+	background-color: var(--green-light);
+	color: var(--bg-light)
 }
 
 .btn-primary:hover {
@@ -162,7 +175,7 @@ footer {
 
 .hero-buttons {
 	margin: 1.5rem;
-	background: #ffffff;
+	background: var(--bg-light);
 	background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(0, 95, 115, 0.10) 50%, rgba(255, 255, 255, 1) 100%);
 }
 
@@ -179,7 +192,7 @@ footer {
 }
 
 .feature-card {
-	background: #ffffff;
+	background: var(--bg-light);
 	border-radius: 0.75rem; /* 12px */
 	box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1); /* 0 4px 12px */
 	padding: 2rem;
@@ -190,7 +203,7 @@ footer {
 }
 
 .feature-card:hover {
-	transform: translateY(-0.375rem) scale(1.1) rotate(5deg); /* -6px */
+	transform: translateY(-0.375rem) /* -6px */ scale(1.1) rotate(5deg); 
 }
 
 .feature-card img {
@@ -208,7 +221,7 @@ footer {
 	padding: 2.5rem;
 	max-width: 62.5rem;
 	text-align: center;
-	background: #ffffff;
+	background-color: var(--bg-light);
 	border-radius: 1rem;
 	box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -232,7 +245,7 @@ footer {
 	padding: 2.5rem;
 	max-width: 60rem;
 	text-align: center;
-	background: #ffffff;
+	background-color: var(--bg-light);
 	border-radius: 1rem;
 	box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
 }
@@ -257,7 +270,7 @@ footer {
 }
 
 .about-us ul li::before {
-    /* Essas barras invertidas são códigos Unicode, peguei na web */
+    /* Essas barras invertidas são códigos unicode, peguei na internet */
   	content: "\2713\00a0";
   	color: var(--green-light);
 }
@@ -267,11 +280,6 @@ footer {
 
 .phone:hover {
 	transform: scale(1.2) rotate(-8deg); /* Gira levemente no eixo Z */
-}
-
-.phone:hover ~ .title {
-	opacity: 0;
-	transition: opacity 0.3s ease;
 }
 
 /* Container principal da página de contato */
@@ -296,7 +304,7 @@ footer {
 
 .form-container h2 {
 	margin-bottom: 1.25rem; /* 20px */
-	font-size: 1.5rem; /* 24px */
+	font-size: 1.5rem;
 }
 
 .form-container form {
@@ -309,9 +317,9 @@ footer {
 .form-container textarea {
 	padding: 0.625rem; /* 10px */
 	margin: 0.75rem; /* 12px */
-	font-size: 1rem; /* 16px */
+	font-size: 1rem;
 	border: 2px dotted var(--green-dark);
-	border-radius: 0.3125rem; /* 5px */
+	border-radius: 5px;
 	box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1); /* 0 4px 12px */
 }
 
@@ -354,8 +362,8 @@ footer {
 
 .social-container img {
 	filter: drop-shadow(0 .2rem 0 rgb(255, 255, 255)); /* 0 4px 12px */
-	width: 2.5rem; /* 40px */
-	height: 2.5rem; /* 40px */
+	width: 2.5rem;
+	height: 2.5rem;
 	transition: transform 0.2s ease;
 	cursor: pointer;
 }
@@ -368,15 +376,20 @@ body {
 	background-color: var(--bg-light);
 }
 
-/* Container principal app */
 .app-container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center; 
-	max-width: 75rem; /* 1200px */
-	margin: auto; /* centraliza na tela */
-	flex-wrap: wrap; /* quebra em tela menor */
-	background-color: var(--bg-light);
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 75rem;
+  margin: auto;
+  background-color: var(--bg-light);
+}
+
+/* Inverte o container de acessibilidade pra imagem ficar do lado direito */
+#invert {
+	flex-direction: row;
 }
 
 /* Texto */
@@ -400,7 +413,8 @@ body {
 .app-image {
 	flex: 1 1 25rem;
 	text-align: center;
-	margin: 4rem;
+	margin: 2rem;
+	image-rendering: optimizeQuality;
 }
 
 .app-mockup {
@@ -427,6 +441,7 @@ body {
 
 /* Responsividade */
 @media (max-width: 48rem) { /* 768px */
+
 	/* Mostra toggle hamburguerzinho */
 	.menu-toggle {
 		display: block;
@@ -472,5 +487,10 @@ body {
 	.feature-card {
 		width: 100%;
 		max-width: 25rem; /* 400px */
+	}
+	
+	/* Corrige a inversão no mobile */
+	#invert {
+		flex-direction: row-reverse;
 	}
 }
