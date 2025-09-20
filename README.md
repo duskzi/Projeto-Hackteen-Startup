@@ -21,8 +21,10 @@ Prof. Edson Galvão.
   Nosso objetivo é tornar o mobilidade prática, acessível e segura para todos.
 
 <strong>INSTRUÇÕES</strong>: Baixe o código em .ZIP na <i>branch main</i>, descompacte e abra o arquivo <strong>index.html</strong>.
+<br>
+<strong>VÍDEO DA STARTUP</strong>: https://drive.google.com/file/d/1qJtf52sDJqqHqEiLBZR8wHsCNI4KLFEu/view?usp=sharing
 
-<strong>Extras</strong>:
+<strong>Extras</strong>:<br>
   Sites utilizados durante o desenvolvimento:
   - SVGs, icone da startup desenhados com: https://www.svgator.com/
   - Gradiente de cores criado com: https://cssgradient.io/
