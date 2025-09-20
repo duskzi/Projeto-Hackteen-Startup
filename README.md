@@ -29,9 +29,17 @@ Prof. Edson Galvão.
   - SVGs, icone da startup desenhados com: https://www.svgator.com/
   - Gradiente de cores criado com: https://cssgradient.io/
   - Ícones das redes sociais pegas no: https://www.flaticon.com/
+  - Imagem do celular com o site: https://mockuphone.com/
 
   Tutoriais de grande ajuda:
   - Formulário: https://youtu.be/wwqOJ2o84S4?si=i28UYLw_wWjwai_f
   - Tutorial de SVG: https://youtu.be/9EwIPb681ng?si=bhyWMS4QppKMU3al
   - Tutorial de animações CSS: https://www.youtube.com/watch?v=z2LQYsZhsFw
+
+  Programas utilizados:
+  - FlStudio (mudar a orientação de um áudio)
+  - Audacity (Suprir ruídos)
+  - Capcut
+  - Git
+  - VsCode
 
