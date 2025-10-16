@@ -36,29 +36,29 @@ Nosso objetivo é tornar a mobilidade **prática, acessível e segura para todos
 ---
 
 ## Vídeo da Startup
-[Assista ao vídeo de apresentação da Movzi](https://drive.google.com/file/d/1qJtf52sDJqqHqEiLBZR8wHsCNI4KLFEu/view?usp=sharing)
+[Nosso vídeo de apresentação](https://drive.google.com/file/d/1qJtf52sDJqqHqEiLBZR8wHsCNI4KLFEu/view?usp=sharing)
 
 ---
 
 ## Ferramentas e Recursos Utilizados
 
-### Sites de apoio
+### Sites úteis para o visual 
 - [SVGator](https://www.svgator.com/) — Criação dos ícones da startup  
-- [CSS Gradient](https://cssgradient.io/) — Gradiente de cores  
-- [Flaticon](https://www.flaticon.com/) — Ícones das redes sociais  
-- [Mockuphone](https://mockuphone.com/) — Mockup de celular para apresentação do site  
+- [CSS Gradient](https://cssgradient.io/) — Gradiente de cores
+- [Flaticon](https://www.flaticon.com/) — Ícones das redes sociais
+- [Mockuphone](https://mockuphone.com/) — Mockup de celular para o site  
 
-### Tutoriais úteis
-- [Formulário HTML + CSS](https://youtu.be/wwqOJ2o84S4?si=i28UYLw_wWjwai_f)  
+### Tutoriais úteis 
+- [Formulário HTML + CSS simples](https://youtu.be/wwqOJ2o84S4?si=i28UYLw_wWjwai_f)  
 - [Animações com SVG](https://youtu.be/9EwIPb681ng?si=bhyWMS4QppKMU3al)  
 - [Animações com CSS](https://www.youtube.com/watch?v=z2LQYsZhsFw)  
 
 ---
 
 ## Programas Utilizados
-- **FL Studio** — Ajuste de orientação de áudio  
-- **Audacity** — Redução de ruídos sonoros  
+- **FL Studio** — Ajuste de orientação de áudio 
+- **Audacity** — Redução de ruídos
 - **CapCut** — Edição de vídeo  
 - **Git** — Controle de versão  
-- **VSCode** — Edição de código  
+- **VSCode** — Editar e codar
 
